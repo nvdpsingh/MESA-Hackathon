@@ -1,5 +1,7 @@
 import os
 import tempfile
+import json
+import shutil
 import streamlit as st
 try:
 	from dotenv import load_dotenv  # type: ignore
@@ -16,47 +18,46 @@ from src.utils.notes import generate_notes_from_text, iter_generate_notes_from_t
 st.set_page_config(page_title="LMS RAG Demo", page_icon="📚", layout="wide")
 st.title("📚 LMS RAG Demo")
 
+# Vector store helpers (single global store)
+def _store_dir() -> str:
+	return os.path.join("data", "vector_store")
+
+def _meta_path() -> str:
+	return os.path.join(_store_dir(), "meta.json")
+
+def _existing_sources() -> set[str]:
+	meta = _meta_path()
+	if not os.path.exists(meta):
+		return set()
+	try:
+		with open(meta, "r", encoding="utf-8") as f:
+			metas = json.load(f)
+		return {m.get("source", "") for m in metas}
+	except Exception:
+		return set()
+
+def _maybe_clear_index(expected_sources: set[str]) -> None:
+	current = _existing_sources()
+	if current and current != expected_sources:
+		try:
+			shutil.rmtree(_store_dir())
+		except FileNotFoundError:
+			pass
 
 with st.sidebar:
 	st.header("Settings")
 	embed_model = st.text_input("Embedding model", value="all-MiniLM-L6-v2")
 	top_k = st.number_input("Top K", min_value=1, max_value=20, value=5)
-	backend = st.selectbox("LLM Backend", options=["groq (OpenAI-compatible)", "openai", "ollama"], index=0)
-	groq_key = None
-	groq_model = None
-	opnai_key = None
-	opnai_model = None
-	if backend.startswith("groq"):
-		st.caption("Uses GROQ_API_KEY from .env (or paste below)")
-		groq_key = st.text_input("GROQ_API_KEY (optional)", type="password")
-		groq_model = st.text_input("GROQ_MODEL (optional)", value=os.getenv("GROQ_MODEL", ""), help="Enter Groq model id, e.g., a current Llama or your OSS 20B id")
-	elif backend == "openai":
-		st.caption("Uses OPENAI_API_KEY; set model in field below (e.g., gpt-4o-mini or an OSS 20B served via OpenAI if available)")
-		opnai_key = st.text_input("OPENAI_API_KEY (optional)", type="password")
-		opnai_model = st.text_input("OPENAI_MODEL", value=os.getenv("OPENAI_MODEL", "gpt-4o-mini"))
-	else:
-		st.caption("Requires local ollama service and OLLAMA_MODEL (default llama3.1:8b)")
-
-	# Allow overriding
-	# Dataset isolation
-	dataset = st.text_input("Dataset name", value=st.session_state.get("dataset", "default"))
-	store_dir = os.path.join("data", "vector_store", dataset)
-	st.caption(f"Active dataset: {dataset} → {store_dir}")
-	st.session_state["dataset"] = dataset
-	if backend.startswith("groq"):
+	# Auto backend from environment; no key prompts
+	if os.getenv("GROQ_API_KEY"):
 		os.environ["LLM_BACKEND"] = "groq"
-		if groq_key:
-			os.environ["GROQ_API_KEY"] = groq_key
-		if groq_model:
-			os.environ["GROQ_MODEL"] = groq_model
-	elif backend == "openai":
+		st.caption(f"Backend: Groq (GROQ_MODEL={os.getenv('GROQ_MODEL','auto')})")
+	elif os.getenv("OPENAI_API_KEY"):
 		os.environ["LLM_BACKEND"] = "openai"
-		if opnai_key:
-			os.environ["OPENAI_API_KEY"] = opnai_key
-		if opnai_model:
-			os.environ["OPENAI_MODEL"] = opnai_model
+		st.caption(f"Backend: OpenAI (OPENAI_MODEL={os.getenv('OPENAI_MODEL','gpt-4o-mini')})")
 	else:
 		os.environ["LLM_BACKEND"] = "ollama"
+		st.caption(f"Backend: Ollama (model={os.getenv('OLLAMA_MODEL','llama3.1:8b')})")
 
 st.markdown("---")
 
@@ -70,6 +71,7 @@ with col1:
 			pipe = TextExtractionPipeline()
 			results = []
 			tmpdir = tempfile.mkdtemp()
+			planned_sources = set()
 			for f in uploaded:
 				path = os.path.join(tmpdir, f.name)
 				with open(path, "wb") as out:
@@ -77,7 +79,11 @@ with col1:
 				res = pipe.extract_from_file(path)
 				if res.get("success"):
 					results.append(res)
-			_store = ingest_documents(results, store_dir=store_dir, model_name=embed_model)
+					src = res.get("metadata", {}).get("file_name") or "unknown"
+					planned_sources.add(src)
+			_maybe_clear_index(planned_sources)
+			os.makedirs(_store_dir(), exist_ok=True)
+			_store = ingest_documents(results, store_dir=_store_dir(), model_name=embed_model)
 		st.success("Ingested.")
 
 with col2:
@@ -88,14 +94,19 @@ with col2:
 			pipe = TextExtractionPipeline()
 			res = pipe.extract_from_youtube(yt_url)
 			docs = []
+			planned_sources = set()
 			if res.get("success") and res.get("videos"):
 				for v in res["videos"]:
 					if v.get("success"):
 						docs.append(v)
+						planned_sources.add(v.get("video_id") or "unknown")
 			elif res.get("success"):
 				docs.append(res)
+				planned_sources.add(res.get("video_id") or "unknown")
 			if docs:
-				ingest_documents(docs, store_dir=store_dir, model_name=embed_model)
+				_maybe_clear_index(planned_sources)
+				os.makedirs(_store_dir(), exist_ok=True)
+				ingest_documents(docs, store_dir=_store_dir(), model_name=embed_model)
 		st.success("Ingested.")
 
 st.markdown("---")
@@ -104,7 +115,7 @@ st.subheader("Ask a question")
 query = st.text_input("Your question")
 if st.button("Answer") and query:
 	with st.spinner("Retrieving and answering..."):
-		contexts = mmr_retrieve(query, top_k=top_k, store_dir=store_dir, model_name=embed_model)
+		contexts = mmr_retrieve(query, top_k=top_k, store_dir=_store_dir(), model_name=embed_model)
 		if not contexts:
 			st.warning("No results found. Ingest content first.")
 		else:
@@ -126,11 +137,10 @@ with coln2:
 if st.button("Start Note-Making"):
 	with st.spinner("Generating notes..."):
 		# Gather all currently ingested text from vector store metadata
-		store_meta = os.path.join(store_dir, "meta.json")
+		store_meta = _meta_path()
 		if not os.path.exists(store_meta):
 			st.warning("No ingested content found. Ingest PDFs/DOCs/YouTube first.")
 		else:
-			import json
 			with open(store_meta, "r", encoding="utf-8") as f:
 				metas = json.load(f)
 			# Sort by source, then chunk_index for a stable reading flow
