@@ -1,0 +1,20 @@
+# Core dependencies
+youtube-transcript-api==1.2.2
+yt-dlp==2024.12.13
+
+# Document processing
+PyPDF2==3.0.1
+python-docx==1.1.0
+# python-magic==0.4.27  # Optional: for MIME type detection
+
+# Utilities
+requests==2.32.4
+python-dotenv==1.0.0
+
+# Embeddings + Vector store (local)
+faiss-cpu==1.8.0.post1
+sentence-transformers==3.0.1
+numpy==1.26.4
+openai==1.54.4
+ollama==0.3.3
+streamlit==1.38.0
