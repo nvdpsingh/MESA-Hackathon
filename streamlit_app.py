@@ -176,16 +176,26 @@ if True:
 		if "chat_cooldown" not in st.session_state:
 			st.session_state.chat_cooldown = 0.0
 
-		# Display chat history
-		for msg in st.session_state.chat_messages:
-			if msg.get("role") == "user":
-				st.markdown(f"**You:** {msg.get('content','')}")
-			else:
-				st.markdown(f"**Assistant:** {msg.get('content','')}")
+		# Chat container
+		chat_container = st.container()
+		
+		# Display chat history in scrollable container
+		with chat_container:
+			for msg in st.session_state.chat_messages:
+				if msg.get("role") == "user":
+					st.markdown(f"**You:** {msg.get('content','')}")
+				else:
+					st.markdown(f"**Assistant:** {msg.get('content','')}")
 
-		# Input
-		user_q = st.text_input("Your question", key="chat_input")
-		if st.button("Send", key="chat_send") and user_q:
+		# Chat input at bottom
+		st.markdown("---")
+		col1, col2 = st.columns([4, 1])
+		with col1:
+			user_q = st.text_input("Ask a question about your content...", key="chat_input", placeholder="Type your question here...")
+		with col2:
+			send_button = st.button("Send", key="chat_send", type="primary")
+		
+		if send_button and user_q:
 			# simple cooldown to avoid hammering Groq
 			now = time.time()
 			if now - st.session_state.chat_cooldown < 3.0:
@@ -212,167 +222,106 @@ if True:
 				st.rerun()
 
 	with tab_learning:
-		st.subheader("🎓 Learning Mode")
-		if st.button("Start Learning Mode"):
-			store_meta = _meta_path()
-			if not os.path.exists(store_meta):
-				st.warning("No notes context found. Generate notes first.")
-			else:
-				from src.utils.learning_mode import extract_topics_from_notes, generate_explainer, generate_quiz, generate_assignment, recommend_youtube, build_topic_context
-				from src.utils.web_search import recommend_articles_ddg
-				# Recreate notes text from meta (already sorted above if generated recently)
+		st.subheader("🎓 Learning Mode - AI Tutor Chat")
+		
+		# Check if notes are available
+		store_meta = _meta_path()
+		if not os.path.exists(store_meta):
+			st.warning("No notes context found. Generate notes first.")
+		else:
+			# Initialize learning chat
+			if "learning_messages" not in st.session_state:
+				st.session_state.learning_messages = []
+			if "learning_cooldown" not in st.session_state:
+				st.session_state.learning_cooldown = 0.0
+			if "learning_initialized" not in st.session_state:
+				st.session_state.learning_initialized = False
+
+			# Initialize tutor with topics from notes
+			if not st.session_state.learning_initialized:
+				from src.utils.learning_mode import extract_topics_from_notes
 				with open(store_meta, "r", encoding="utf-8") as f:
 					metas = json.load(f)
 				texts = [m.get("text", "") for m in metas if m.get("text")]
-				# Fallback to first N texts if many
 				notes_sections = texts[:50]
 				topics = extract_topics_from_notes(notes_sections)
 				if not topics:
-					st.info("Could not detect headings; using first few sections as topics.")
 					topics = [f"Topic {i+1}" for i in range(min(5, len(notes_sections)))]
-				st.write("Detected topics:", topics[:10])
-				for topic in topics[:10]:
-					with st.expander(f"{topic}", expanded=False):
-						st.markdown("**Explainer**")
-						if st.button("Generate Explainer", key=f"exp_{topic}"):
-							st.write(generate_explainer(topic, notes_sections))
-						st.markdown("**Quick Quiz**")
-						if st.button("Generate Quiz", key=f"quiz_{topic}"):
-							st.write(generate_quiz(topic, notes_sections))
-						st.markdown("**Small Assignment**")
-						if st.button("Generate Assignment", key=f"asn_{topic}"):
-							st.write(generate_assignment(topic, notes_sections))
-						st.markdown("**Recommended YouTube**")
-						links = recommend_youtube(topic)
-						for l in links:
-							st.write(f"- [{l['title']}]({l['url']})")
-						st.markdown("**Recommended Articles**")
-						arts = recommend_articles_ddg(topic)
-						for a in arts:
-							st.write(f"- [{a['title']}]({a['url']})")
-						st.markdown("**Tutor Chat**")
-						# Per-topic tutor memory
-						sess_key = f"tutor_chat_{topic}"
-						if sess_key not in st.session_state:
-							st.session_state[sess_key] = []
-						for msg in st.session_state[sess_key]:
-							if msg.get("role") == "user":
-								st.markdown(f"You: {msg.get('content','')}")
-							else:
-								st.markdown(f"Tutor: {msg.get('content','')}")
-						user_turn = st.text_input(f"Ask about {topic}", key=f"tutor_input_{topic}")
-						if st.button("Ask", key=f"tutor_send_{topic}") and user_turn:
-							cool_key = f"cool_{topic}"
-							if cool_key not in st.session_state:
-								st.session_state[cool_key] = 0.0
-							now = time.time()
-							if now - st.session_state[cool_key] < 3.0:
-								st.warning("Please wait a moment before sending another message.")
-								st.stop()
-							with st.spinner("Thinking..."):
-								# Build context strictly from Notes Index for guided mode
-								from src.utils.ingest import semantic_search
-								note_ctx = semantic_search(user_turn, store_dir=os.path.join("data","notes_index"), top_k=TOP_K, model_name=EMBED_MODEL)
-								# Memory context for this tutor thread + global profile
-								mem_ctx = mem.memory_contexts(st.session_state[sess_key], profile_id=profile_id, short_window=memory_short_window)
-								all_ctx = note_ctx + mem_ctx
-								prompt = f"Guided Mode Tutor. Be concise, propose next micro-step (video/article link from above), ask a question, and give a tiny assignment if relevant. Student said: {user_turn}"
-								try:
-									reply = answer_with_context(prompt, all_ctx)
-								except Exception as e:
-									reply = f"(LLM busy) Let's pause a second and retry soon. Error: {e}"
-								st.session_state[sess_key].append({"role": "user", "content": user_turn})
-								st.session_state[sess_key].append({"role": "assistant", "content": reply})
-								_ = mem.summarize_and_store_long_term(st.session_state[sess_key], profile_id=profile_id)
-								st.session_state[cool_key] = time.time()
-								st.rerun()
+				
+				st.session_state.learning_topics = topics[:10]
+				st.session_state.learning_initialized = True
+				
+				# Welcome message
+				welcome_msg = f"Hello! I'm your AI learning tutor. I can help you learn about these topics: {', '.join(topics[:5])}. What would you like to explore first?"
+				st.session_state.learning_messages.append({"role": "assistant", "content": welcome_msg})
 
-				st.markdown("---")
-				st.markdown("### Guided Chatbot (Notes-based)")
-				# Initialize guided state
-				if "guided_messages" not in st.session_state:
-					st.session_state.guided_messages = []  # list of {role, content}
-				if "guided_state" not in st.session_state:
-					st.session_state.guided_state = {"idx": 0, "stage": "idle", "topics": topics}
-
-				# Controls
-				if st.button("Start Guided Session"):
-					st.session_state.guided_messages = []
-					st.session_state.guided_state = {"idx": 0, "stage": "intro", "topics": topics}
-					st.rerun()
-
-				# Show conversation
-				for msg in st.session_state.guided_messages:
+			# Chat container
+			chat_container = st.container()
+			
+			# Display chat history
+			with chat_container:
+				for msg in st.session_state.learning_messages:
 					if msg.get("role") == "user":
-						st.markdown(f"You: {msg.get('content','')}")
+						st.markdown(f"**You:** {msg.get('content','')}")
 					else:
-						st.markdown(f"Tutor: {msg.get('content','')}")
+						st.markdown(f"**Tutor:** {msg.get('content','')}")
 
-				# Input and send
-				user_turn = st.text_input("Type your reply/question for the guided tutor", key="guided_input")
-				if st.button("Send to Guided Tutor"):
-					gs = st.session_state.guided_state
-					if not gs.get("topics"):
-						st.warning("Start a session first.")
-						st.stop()
-					cur_idx = int(gs.get("idx", 0))
-					cur_idx = max(0, min(cur_idx, max(0, len(gs["topics"]) - 1)))
-					cur_topic = gs["topics"][cur_idx]
-					stage = gs.get("stage", "intro")
-
+			# Chat input at bottom
+			st.markdown("---")
+			col1, col2 = st.columns([4, 1])
+			with col1:
+				user_input = st.text_input("Ask your tutor anything...", key="learning_input", placeholder="What would you like to learn about?")
+			with col2:
+				send_button = st.button("Send", key="learning_send", type="primary")
+			
+			if send_button and user_input:
+				# Cooldown check
+				now = time.time()
+				if now - st.session_state.learning_cooldown < 3.0:
+					st.warning("Please wait a moment before sending another message.")
+					st.stop()
+				
+				with st.spinner("Tutor is thinking..."):
 					# Build context from Notes Index
 					from src.utils.ingest import semantic_search
-					note_ctx = semantic_search(cur_topic, store_dir=os.path.join("data","notes_index"), top_k=TOP_K, model_name=EMBED_MODEL)
+					note_ctx = semantic_search(user_input, store_dir=os.path.join("data","notes_index"), top_k=TOP_K, model_name=EMBED_MODEL)
+					
 					# Memory context
-					mem_ctx = mem.memory_contexts(st.session_state.guided_messages, profile_id=profile_id, short_window=memory_short_window)
-					# Resource candidates
+					mem_ctx = mem.memory_contexts(st.session_state.learning_messages, profile_id=profile_id, short_window=memory_short_window)
+					
+					# Get recommended resources
 					from src.utils.learning_mode import recommend_youtube
 					from src.utils.web_search import recommend_articles_ddg
-					vlinks = recommend_youtube(cur_topic)
-					alinks = recommend_articles_ddg(cur_topic)
-					res_text = (
-						"Videos:\n" + "\n".join([f"- {l['title']}: {l['url']}" for l in vlinks]) +
-						"\nArticles:\n" + "\n".join([f"- {a['title']}: {a['url']}" for a in alinks])
-					)
-					all_ctx = note_ctx + mem_ctx + [{"source": "resources", "chunk_index": 0, "text": res_text}]
-
-					# Compose guided instruction
-					if stage == "intro":
-						instr = (
-							f"You are a Guided Learning tutor. Topic: '{cur_topic}'. "
-							"1) Give a brief intro grounded in context. 2) Recommend 1-2 items from the provided Videos/Articles list with 1-line why. "
-							"3) End with one question to check understanding. Keep under 6-8 sentences total."
-						)
-						student_msg = user_turn or "(no prior student message)"
-						prompt = f"{instr}\nStudent: {student_msg}"
-						next_stage = "check"
-					else:
-						# check/feedback stage
-						instr = (
-							f"You are a Guided Learning tutor. Topic: '{cur_topic}'. "
-							"Give brief feedback on the student's answer, then propose the next micro-step (link 1 video or 1 article from the list), "
-							"and a tiny assignment (2-3 steps). End by asking a short follow-up question. Keep under 6-8 sentences."
-						)
-						prompt = f"{instr}\nStudent: {user_turn}"
-						# after feedback, advance to next topic
-						next_stage = "advance"
-
+					
+					# Find relevant topic for resources
+					relevant_topic = user_input
+					for topic in st.session_state.learning_topics:
+						if topic.lower() in user_input.lower() or user_input.lower() in topic.lower():
+							relevant_topic = topic
+							break
+					
+					vlinks = recommend_youtube(relevant_topic)
+					alinks = recommend_articles_ddg(relevant_topic)
+					res_text = f"Recommended Videos for '{relevant_topic}':\n" + "\n".join([f"- {l['title']}: {l['url']}" for l in vlinks[:2]]) + \
+								  f"\nRecommended Articles for '{relevant_topic}':\n" + "\n".join([f"- {a['title']}: {a['url']}" for a in alinks[:2]])
+					res_ctx = [{"source": "resources", "chunk_index": 0, "text": res_text}]
+					
+					all_ctx = note_ctx + mem_ctx + res_ctx
+					
+					# Tutor prompt
+					prompt = f"You are an AI learning tutor. Help the student learn by explaining concepts, asking questions, suggesting resources, and giving small assignments. Be encouraging and educational. Student said: {user_input}"
+					
 					try:
 						reply = answer_with_context(prompt, all_ctx)
 					except Exception as e:
-						reply = f"(LLM busy) Let's pause a second and retry soon. Error: {e}"
-
-					st.session_state.guided_messages.append({"role": "user", "content": user_turn})
-					st.session_state.guided_messages.append({"role": "assistant", "content": reply})
-					_ = mem.summarize_and_store_long_term(st.session_state.guided_messages, profile_id=profile_id)
-
-					# Progress state
-					if next_stage == "advance":
-						st.session_state.guided_state["idx"] = min(cur_idx + 1, max(0, len(gs["topics"]) - 1))
-						st.session_state.guided_state["stage"] = "intro"
-					else:
-						st.session_state.guided_state["stage"] = next_stage
-
+						reply = f"I'm having trouble connecting right now. Please try again in a moment. Error: {e}"
+					
+					st.session_state.learning_messages.append({"role": "user", "content": user_input})
+					st.session_state.learning_messages.append({"role": "assistant", "content": reply})
+					
+					# Update long-term memory
+					_ = mem.summarize_and_store_long_term(st.session_state.learning_messages, profile_id=profile_id)
+					st.session_state.learning_cooldown = time.time()
 					st.rerun()
 
 	with tab_resources:
@@ -382,8 +331,8 @@ if True:
 		if not os.path.exists(store_meta):
 			st.warning("No notes context found. Generate notes first.")
 		else:
-			from src.utils.learning_mode import extract_topics_from_notes, recommend_youtube
-			from src.utils.web_search import recommend_articles_ddg
+			from src.utils.learning_mode import extract_topics_from_notes
+			from src.utils.web_search import recommend_articles_ddg, recommend_youtube_ddg
 			with open(store_meta, "r", encoding="utf-8") as f:
 				metas = json.load(f)
 			texts = [m.get("text", "") for m in metas if m.get("text")]
@@ -394,14 +343,22 @@ if True:
 				topics = [f"Topic {i+1}" for i in range(min(5, len(notes_sections)))]
 			for topic in topics[:10]:
 				with st.expander(topic, expanded=False):
-					st.markdown("**Related Videos**")
-					vlinks = recommend_youtube(topic)
-					for l in vlinks:
-						st.write(f"- [{l['title']}]({l['url']})")
-					st.markdown("**Related Articles**")
+					st.markdown("**Related Videos (via DuckDuckGo)**")
+					vlinks = recommend_youtube_ddg(topic)
+					if vlinks:
+						for l in vlinks:
+							st.write(f"- [{l['title']}]({l['url']})")
+					else:
+						st.write("No videos found for this topic.")
+					
+					st.markdown("**Related Articles (via DuckDuckGo)**")
 					alinks = recommend_articles_ddg(topic)
-					for a in alinks:
-						st.write(f"- [{a['title']}]({a['url']})")
+					if alinks:
+						for a in alinks:
+							st.write(f"- [{a['title']}]({a['url']})")
+					else:
+						st.write("No articles found for this topic.")
+					
 					if st.button("Explain connections", key=f"explain_{topic}"):
 						# Optional concise explanation using LLM with notes context
 						from src.utils.learning_mode import build_topic_context
