@@ -46,19 +46,12 @@ def _existing_sources() -> set[str]:
 		return set()
 
 def _maybe_clear_index(expected_sources: set[str]) -> None:
-	# Always clear the index when new content is being ingested
-	# This prevents mixing data from different sources
 	current = _existing_sources()
-	if current:  # If there's existing content, clear it
+	if current and current != expected_sources:
 		try:
 			shutil.rmtree(_store_dir())
 		except FileNotFoundError:
 			pass
-
-# Auto-clear all cached data on app launch
-if os.path.exists(_store_dir()):
-	shutil.rmtree(_store_dir())
-	st.info("🧹 Cleared all cached data on startup")
 
 # Auto backend from environment and show a small caption
 if os.getenv("GROQ_API_KEY"):
@@ -74,16 +67,6 @@ else:
 # Defaults (hidden from UI)
 EMBED_MODEL = os.getenv("EMBED_MODEL", "all-MiniLM-L6-v2")
 TOP_K = int(os.getenv("TOP_K", "3"))
-
-st.markdown("---")
-
-# Clear data button
-if st.button("🗑️ Clear All Data", help="Clear all ingested content and start fresh"):
-	if os.path.exists(_store_dir()):
-		shutil.rmtree(_store_dir())
-		st.success("All data cleared!")
-	else:
-		st.info("No data to clear.")
 
 st.markdown("---")
 

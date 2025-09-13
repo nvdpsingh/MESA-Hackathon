@@ -1574,3 +1574,41 @@ Ways to work around this are explained in the "Working around IP bans" section o
 
 If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
 2025-09-13 16:07:52,995 - src.pipelines.youtube_extractor - ERROR - All approaches failed for video PeMlggyqz0Y
+2025-09-13 16:09:16,263 - src.pipelines.pdf_extractor - INFO - Extracting text from PDF: /var/folders/hh/vn10hnjs325_pmzjhj9nw97w0000gn/T/tmplwet4iht/lecture1.pdf
+2025-09-13 16:09:16,367 - src.pipelines.pdf_extractor - INFO - Successfully extracted 10065 characters from 25 pages
+2025-09-13 16:09:16,501 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 16:09:16,501 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 16:09:57,107 - src.pipelines.pdf_extractor - INFO - Extracting text from PDF: /var/folders/hh/vn10hnjs325_pmzjhj9nw97w0000gn/T/tmpplst6vz3/lecture1.pdf
+2025-09-13 16:09:57,208 - src.pipelines.pdf_extractor - INFO - Successfully extracted 10065 characters from 25 pages
+2025-09-13 16:09:57,209 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 16:09:57,209 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 16:10:02,423 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 16:10:05,867 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 16:10:09,318 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 16:10:12,832 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 16:10:15,049 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 16:10:15,050 - openai._base_client - INFO - Retrying request to /chat/completions in 6.000000 seconds
+2025-09-13 16:10:22,309 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 16:10:24,628 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 16:10:24,629 - openai._base_client - INFO - Retrying request to /chat/completions in 9.000000 seconds
+2025-09-13 16:10:34,878 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 16:10:36,894 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 16:10:36,895 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 16:10:51,294 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 16:10:51,295 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 16:10:53,548 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 16:10:53,548 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 16:10:56,519 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 16:12:35,059 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: PeMlggyqz0Y
+2025-09-13 16:12:37,076 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 78 segments
+2025-09-13 16:12:37,158 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 16:12:37,158 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 16:12:44,323 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 16:12:47,167 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 16:12:49,177 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 16:12:49,177 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 16:13:05,091 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 16:13:05,091 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 16:13:07,211 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 16:13:07,211 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 16:13:10,162 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
