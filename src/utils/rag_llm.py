@@ -11,9 +11,14 @@ from typing import List, Dict, Any
 
 
 def _format_context(contexts: List[Dict[str, Any]]) -> str:
-    return "\n\n".join(
-        [f"[source: {c.get('source')} chunk: {c.get('chunk_index')}]\n{c.get('text','')}" for c in contexts]
-    )
+    formatted: List[str] = []
+    for c in contexts:
+        text = c.get("text", "")
+        # Truncate to keep prompts small and reduce rate limits
+        if len(text) > 1500:
+            text = text[:1500]
+        formatted.append(f"[source: {c.get('source')} chunk: {c.get('chunk_index')}]\n{text}")
+    return "\n\n".join(formatted)
 
 
 def _answer_with_ollama(query: str, contexts: List[Dict[str, Any]], model: str | None) -> str:
@@ -48,7 +53,7 @@ def _answer_with_openai_compatible(query: str, contexts: List[Dict[str, Any]], m
         raise RuntimeError("Missing GROQ_API_KEY/OPENAI_API_KEY for OpenAI-compatible backend")
     base_url = os.getenv("GROQ_BASE_URL", "https://api.groq.com/openai/v1")
 
-    client = OpenAI(api_key=api_key, base_url=base_url)
+    client = OpenAI(api_key=api_key, base_url=base_url, timeout=20, max_retries=0)
     model_name = model or os.getenv("GROQ_MODEL")
     # If no model provided, try to auto-select a current Llama model from Groq
     if not model_name:
@@ -79,15 +84,15 @@ def _answer_with_openai_compatible(query: str, contexts: List[Dict[str, Any]], m
         {"role": "user", "content": f"Context:\n{context_text}\n\nQuestion: {query}\nProvide a concise answer with citations."},
     ]
 
-    # Retry with exponential backoff on 429
-    backoff = 2.0
-    for attempt in range(6):
+    # Retry with exponential backoff on 429 (short)
+    backoff = 1.5
+    for attempt in range(3):
         try:
             resp = client.chat.completions.create(
                 model=model_name,
                 messages=messages,
                 temperature=0.2,
-                max_tokens=600,
+                max_tokens=350,
             )
             return resp.choices[0].message.content or ""
         except BadRequestError as e:
@@ -107,16 +112,20 @@ def _answer_with_openai_compatible(query: str, contexts: List[Dict[str, Any]], m
                     pass
             msg = str(e)
             if "429" in msg or "Too Many Requests" in msg:
-                time.sleep(backoff)
-                backoff *= 1.5
-                continue
+                if attempt < 2:
+                    time.sleep(backoff)
+                    backoff *= 1.5
+                    continue
+                raise RuntimeError("Rate limited by LLM (Groq). Please retry shortly.")
             raise
         except Exception as e:
             msg = str(e)
             if "429" in msg or "Too Many Requests" in msg:
-                time.sleep(backoff)
-                backoff *= 1.5
-                continue
+                if attempt < 2:
+                    time.sleep(backoff)
+                    backoff *= 1.5
+                    continue
+                raise RuntimeError("Rate limited by LLM (Groq). Please retry shortly.")
             raise
     # final fallback raise if all retries exhausted
     raise RuntimeError("LLM request failed after retries (Groq-compatible)")
@@ -128,7 +137,7 @@ def _answer_with_openai_native(query: str, contexts: List[Dict[str, Any]], model
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
         raise RuntimeError("Missing OPENAI_API_KEY for OpenAI backend")
-    client = OpenAI(api_key=api_key)
+    client = OpenAI(api_key=api_key, timeout=20, max_retries=0)
 
     # Allow override via model arg or env OPENAI_MODEL; default to a small, cost-effective model
     model_name = model or os.getenv("OPENAI_MODEL", "gpt-4o-mini")
@@ -144,21 +153,23 @@ def _answer_with_openai_native(query: str, contexts: List[Dict[str, Any]], model
         {"role": "user", "content": f"Context:\n{context_text}\n\nQuestion: {query}\nProvide a concise answer with citations."},
     ]
 
-    backoff = 2.0
-    for attempt in range(6):
+    backoff = 1.5
+    for attempt in range(3):
         try:
             resp = client.chat.completions.create(
                 model=model_name,
                 messages=messages,
                 temperature=0.2,
-                max_tokens=600,
+                max_tokens=350,
             )
             return resp.choices[0].message.content or ""
         except Exception as e:
             if "429" in str(e) or "Too Many Requests" in str(e):
-                time.sleep(backoff)
-                backoff *= 1.5
-                continue
+                if attempt < 2:
+                    time.sleep(backoff)
+                    backoff *= 1.5
+                    continue
+                raise RuntimeError("Rate limited by LLM (OpenAI). Please retry shortly.")
             raise
     raise RuntimeError("LLM request failed after retries (OpenAI)")
 
@@ -184,6 +195,16 @@ def answer_with_context(query: str, contexts: List[Dict[str, Any]], model: str |
         return _answer_with_ollama(query, contexts, model)
     if backend == "openai":
         return _answer_with_openai_native(query, contexts, model)
-    return _answer_with_openai_compatible(query, contexts, model)
+    # groq (openai-compatible)
+    try:
+        return _answer_with_openai_compatible(query, contexts, model)
+    except RuntimeError as e:
+        # Optional fallback to Ollama if available
+        if "Rate limited" in str(e) and os.getenv("OLLAMA_FALLBACK", "1") == "1":
+            try:
+                return _answer_with_ollama(query, contexts, model)
+            except Exception:
+                pass
+        raise
 
 

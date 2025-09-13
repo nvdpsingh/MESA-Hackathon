@@ -379,3 +379,1198 @@
 2025-09-13 13:37:52,467 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
 2025-09-13 13:37:52,467 - openai._base_client - INFO - Retrying request to /chat/completions in 6.000000 seconds
 2025-09-13 13:37:59,649 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 13:51:15,248 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: vmy3HgaKJsY
+2025-09-13 13:51:18,725 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 518 segments
+2025-09-13 13:51:18,730 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 13:51:18,730 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 13:51:46,931 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 13:51:48,362 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 13:51:50,060 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 13:51:51,449 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 13:51:52,864 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 13:51:55,029 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 13:51:55,409 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:51:55,410 - openai._base_client - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-09-13 13:52:01,687 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 13:52:02,196 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:52:02,198 - openai._base_client - INFO - Retrying request to /chat/completions in 10.000000 seconds
+2025-09-13 13:52:13,412 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 13:52:13,735 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:52:13,736 - openai._base_client - INFO - Retrying request to /chat/completions in 10.000000 seconds
+2025-09-13 13:52:25,189 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 13:52:25,517 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:52:25,517 - openai._base_client - INFO - Retrying request to /chat/completions in 10.000000 seconds
+2025-09-13 13:52:36,878 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 13:52:37,272 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:52:37,273 - openai._base_client - INFO - Retrying request to /chat/completions in 8.000000 seconds
+2025-09-13 13:52:45,428 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: vmy3HgaKJsY
+2025-09-13 13:52:46,896 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 13:52:49,737 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 518 segments
+2025-09-13 13:52:49,740 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 13:52:49,741 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 13:52:59,256 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 13:52:59,725 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:52:59,726 - openai._base_client - INFO - Retrying request to /chat/completions in 9.000000 seconds
+2025-09-13 13:53:10,043 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 13:53:10,570 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:53:10,571 - openai._base_client - INFO - Retrying request to /chat/completions in 9.000000 seconds
+2025-09-13 13:53:20,808 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 13:53:21,066 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:53:21,067 - openai._base_client - INFO - Retrying request to /chat/completions in 9.000000 seconds
+2025-09-13 13:53:31,318 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 13:53:31,864 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:53:31,865 - openai._base_client - INFO - Retrying request to /chat/completions in 10.000000 seconds
+2025-09-13 13:53:43,225 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 13:53:43,584 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:56:11,010 - src.pipelines.pdf_extractor - INFO - Extracting text from PDF: /var/folders/hh/vn10hnjs325_pmzjhj9nw97w0000gn/T/tmp7qt8je6v/lecture1.pdf
+2025-09-13 13:56:11,116 - src.pipelines.pdf_extractor - INFO - Successfully extracted 10065 characters from 25 pages
+2025-09-13 13:56:11,116 - src.pipelines.pdf_extractor - INFO - Extracting text from PDF: /var/folders/hh/vn10hnjs325_pmzjhj9nw97w0000gn/T/tmp7qt8je6v/lecture2_Spring2025.pdf
+2025-09-13 13:56:11,753 - src.pipelines.pdf_extractor - INFO - Successfully extracted 59739 characters from 117 pages
+2025-09-13 13:56:11,755 - src.pipelines.pdf_extractor - INFO - Extracting text from PDF: /var/folders/hh/vn10hnjs325_pmzjhj9nw97w0000gn/T/tmp7qt8je6v/lecture3-NFA.pdf
+2025-09-13 13:56:12,054 - src.pipelines.pdf_extractor - INFO - Successfully extracted 25467 characters from 54 pages
+2025-09-13 13:56:12,056 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 13:56:12,056 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 13:56:21,401 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 13:56:23,759 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:56:26,137 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:56:29,447 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:56:34,221 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:56:36,535 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:56:38,764 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:56:42,398 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:56:47,201 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:56:49,475 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:56:51,818 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:56:55,285 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:57:00,652 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:57:02,988 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:57:05,329 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:57:09,090 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:57:14,013 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:57:16,184 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:57:18,414 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:57:21,738 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:57:26,640 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:57:29,154 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:57:31,447 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:57:34,789 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:57:39,633 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:57:41,883 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:57:44,314 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:57:47,637 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:57:52,394 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:57:54,685 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:57:56,999 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:58:00,384 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:58:05,220 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:58:07,480 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:58:09,773 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:58:13,008 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:58:17,986 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:58:20,200 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:58:22,413 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:58:25,676 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:58:30,508 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:58:32,679 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:58:35,012 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:58:38,399 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:58:43,154 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:58:45,445 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:58:47,634 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:58:50,919 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:58:55,792 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:58:58,106 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:59:00,346 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:59:03,545 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:59:08,221 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:59:10,458 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:59:12,932 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:59:16,180 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:59:22,908 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:59:25,597 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:59:27,973 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:59:32,137 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:59:37,000 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:59:39,233 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:59:41,558 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:59:45,478 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:59:50,516 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:59:52,847 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:59:55,072 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 13:59:58,406 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:00:05,266 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:00:07,673 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:00:09,927 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:00:13,206 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:00:18,206 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:00:20,422 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:00:22,827 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:00:26,025 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:00:30,837 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:00:33,092 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:00:35,576 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:00:38,956 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:00:43,678 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:00:46,621 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:00:49,295 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:00:53,276 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:00:58,278 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:01:00,755 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:01:03,076 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:01:06,479 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:01:11,285 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:01:13,775 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:01:15,971 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:01:19,273 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:01:24,003 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:01:26,392 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:01:28,699 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:01:32,070 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:01:36,791 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:01:39,240 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:01:41,512 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:01:45,029 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:01:49,903 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:01:52,368 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:01:54,859 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:01:58,363 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:02:03,399 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:02:05,860 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:02:08,356 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:02:11,614 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:02:16,459 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:02:18,763 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:02:21,264 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:02:24,710 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:02:29,572 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:02:32,328 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:02:34,920 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:02:38,487 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:02:43,547 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:02:45,825 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:02:48,376 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:02:51,817 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:02:56,691 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:02:59,017 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:03:01,361 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:03:04,670 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:03:09,695 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:03:12,151 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:03:14,412 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:03:17,923 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:03:22,854 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:03:25,123 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:03:27,473 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:03:30,771 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:03:35,622 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:03:38,023 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:03:40,370 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:03:43,717 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:03:48,508 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:03:50,803 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:03:53,108 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:03:56,566 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:04:01,478 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:04:03,766 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:04:06,011 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:04:09,378 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:04:14,368 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:04:16,753 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:04:19,532 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:04:22,904 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:04:27,811 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:04:30,276 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:04:32,631 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:04:35,975 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:04:40,840 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:04:43,067 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:04:45,421 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:04:48,582 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:04:53,452 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:04:55,799 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:04:58,182 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:05:01,660 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:05:06,498 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:05:08,934 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:05:11,588 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:05:14,944 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:05:19,762 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:05:22,048 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:05:24,534 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:05:27,984 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:05:33,279 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:05:36,101 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:05:40,276 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:05:43,968 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:05:48,977 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:05:52,649 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:05:55,632 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:05:59,658 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:06:04,753 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:06:07,116 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:06:09,330 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:06:12,678 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:06:17,661 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:06:20,218 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:06:22,462 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:06:25,726 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:06:30,574 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:06:32,828 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:06:35,084 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:06:38,442 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:06:43,375 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:06:45,722 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:06:48,315 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:06:51,567 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:06:51,568 - openai._base_client - INFO - Retrying request to /chat/completions in 59.000000 seconds
+2025-09-13 14:07:52,059 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 14:07:54,440 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:07:56,713 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:07:59,923 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:08:04,820 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:08:07,853 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:08:10,281 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:08:13,671 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:08:18,392 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:08:20,675 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:08:23,027 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:08:26,377 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:08:31,175 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:08:33,436 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:08:35,724 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:08:39,041 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:08:43,913 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:08:46,158 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:08:48,523 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:08:51,996 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:08:56,937 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:26:53,217 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: vmy3HgaKJsY
+2025-09-13 14:26:55,836 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 518 segments
+2025-09-13 14:26:55,843 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 14:26:55,843 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 14:27:03,949 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 14:27:04,895 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 14:27:06,058 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:27:08,152 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:27:11,274 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:27:15,950 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:27:22,898 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:27:33,157 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:30:11,575 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: vmy3HgaKJsY
+2025-09-13 14:30:14,121 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 518 segments
+2025-09-13 14:30:14,123 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 14:30:14,123 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 14:30:19,092 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:30:21,245 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:30:24,333 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:30:28,924 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:30:35,887 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:30:46,122 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:32:18,829 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: vmy3HgaKJsY
+2025-09-13 14:32:21,330 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 518 segments
+2025-09-13 14:32:21,334 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 14:32:21,335 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 14:36:49,971 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: vmy3HgaKJsY
+2025-09-13 14:36:53,213 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 518 segments
+2025-09-13 14:36:53,225 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 14:36:53,225 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 14:37:08,183 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 14:37:10,533 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:37:12,797 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:37:16,632 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:37:21,542 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:37:24,362 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:37:27,928 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:37:31,258 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:37:36,126 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:37:38,438 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:37:40,642 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:37:44,138 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:37:49,058 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:37:51,400 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:37:54,161 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:37:57,648 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:38:02,454 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:38:04,948 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:38:07,311 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:38:10,566 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:38:15,367 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:38:17,790 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:38:20,144 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:38:23,334 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:38:28,672 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:38:31,168 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:38:33,790 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:38:37,119 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:38:42,061 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:38:44,488 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:38:46,696 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:38:49,962 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:38:54,791 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:38:57,084 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:38:59,541 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:39:02,724 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:39:08,122 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:39:10,451 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:39:12,780 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:39:15,935 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:39:20,871 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:39:41,725 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 14:39:41,726 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 14:39:45,054 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 14:39:45,055 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 14:39:51,599 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:39:53,709 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:39:56,837 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:40:01,769 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:40:08,750 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:40:19,213 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 14:41:05,709 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: vmy3HgaKJsY
+2025-09-13 14:41:08,821 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 518 segments
+2025-09-13 14:41:08,834 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 14:41:08,834 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:08:38,934 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: vmy3HgaKJsY
+2025-09-13 15:08:41,304 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 518 segments
+2025-09-13 15:08:41,306 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:08:41,307 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:12:35,896 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: vmy3HgaKJsY
+2025-09-13 15:12:46,413 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 518 segments
+2025-09-13 15:12:46,416 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:12:46,416 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:13:05,096 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: vmy3HgaKJsY
+2025-09-13 15:13:07,357 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 518 segments
+2025-09-13 15:13:07,360 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:13:07,360 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:13:48,586 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: vmy3HgaKJsY
+2025-09-13 15:13:51,862 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 518 segments
+2025-09-13 15:13:51,920 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:13:51,920 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:14:08,063 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:14:13,772 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:14:16,410 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:14:16,410 - openai._base_client - INFO - Retrying request to /chat/completions in 26.000000 seconds
+2025-09-13 15:14:43,929 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:14:47,514 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:14:50,108 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:14:53,506 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:14:59,253 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:15:02,272 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:15:04,848 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:15:08,436 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:15:13,297 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:15:17,525 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:15:19,836 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:15:23,017 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:15:27,828 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:15:30,149 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:15:32,422 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:15:35,797 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:15:40,590 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:15:42,998 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:15:45,737 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:15:49,026 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:15:53,776 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:15:56,081 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:15:58,520 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:16:01,801 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:16:06,505 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:16:08,956 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:16:11,152 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:16:14,367 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:16:19,093 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:16:21,247 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:16:23,404 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:16:26,889 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:16:31,580 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:16:33,612 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:16:33,613 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:17:23,984 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:17:23,984 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:17:27,254 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:17:27,255 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:17:31,341 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:17:33,445 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:17:35,782 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:18:09,646 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: vmy3HgaKJsY
+2025-09-13 15:18:12,006 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 518 segments
+2025-09-13 15:18:12,007 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:18:12,007 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:18:24,959 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:18:27,397 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:18:30,561 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:18:35,491 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:18:37,704 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:18:39,939 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:18:43,097 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:18:47,768 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:18:49,932 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:18:52,133 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:18:55,352 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:19:00,109 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:19:52,983 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: vmy3HgaKJsY
+2025-09-13 15:19:55,348 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 518 segments
+2025-09-13 15:19:55,358 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:19:55,359 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:20:01,750 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:20:04,803 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:20:07,780 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:20:10,941 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:20:15,064 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:20:17,931 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:20:20,857 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:20:22,999 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:20:23,001 - openai._base_client - INFO - Retrying request to /chat/completions in 2.000000 seconds
+2025-09-13 15:20:26,095 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:20:28,248 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:20:28,251 - openai._base_client - INFO - Retrying request to /chat/completions in 9.000000 seconds
+2025-09-13 15:20:38,521 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:20:40,956 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:20:40,957 - openai._base_client - INFO - Retrying request to /chat/completions in 9.000000 seconds
+2025-09-13 15:20:50,949 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:20:53,402 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:20:53,404 - openai._base_client - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-09-13 15:20:59,865 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:21:01,893 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:21:01,894 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:21:30,188 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:21:30,188 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:21:32,568 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:21:32,569 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:21:37,185 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:28:02,997 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: vmy3HgaKJsY
+2025-09-13 15:28:05,496 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 518 segments
+2025-09-13 15:28:05,504 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:28:05,504 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:28:13,305 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:28:16,382 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:28:19,253 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:28:22,452 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:28:25,957 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:28:29,163 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:28:32,683 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:28:34,905 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:28:34,906 - openai._base_client - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-09-13 15:28:40,814 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:28:42,980 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:28:42,981 - openai._base_client - INFO - Retrying request to /chat/completions in 7.000000 seconds
+2025-09-13 15:28:51,448 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:28:53,694 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:28:53,696 - openai._base_client - INFO - Retrying request to /chat/completions in 8.000000 seconds
+2025-09-13 15:29:02,958 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:29:05,227 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:29:05,228 - openai._base_client - INFO - Retrying request to /chat/completions in 6.000000 seconds
+2025-09-13 15:29:12,518 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:29:14,549 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:29:14,549 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:29:40,006 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:29:40,006 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:29:41,825 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:29:41,825 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:29:45,086 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:31:35,004 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:31:35,007 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:31:37,846 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:31:37,846 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:31:40,880 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:31:40,881 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:31:42,802 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:31:42,802 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:31:44,477 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:31:44,477 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:31:46,238 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:31:46,240 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:31:48,076 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:31:48,077 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:31:49,740 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:31:49,740 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:31:49,963 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:31:49,964 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:31:52,729 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:31:52,730 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:31:56,564 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:31:57,002 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:31:57,002 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:31:59,088 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:31:59,089 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:32:01,200 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:32:01,200 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:32:02,947 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:32:02,947 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:32:04,783 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:32:04,783 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:32:06,396 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:32:06,396 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:32:08,847 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:32:08,848 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:32:09,959 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:32:09,959 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:32:11,335 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:32:11,335 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:32:12,679 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:32:12,679 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:32:15,092 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:32:15,092 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:32:16,568 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:32:16,569 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:32:18,412 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:32:18,412 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:32:20,178 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:32:20,178 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:32:21,758 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:32:21,759 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:32:22,423 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: vmy3HgaKJsY
+2025-09-13 15:32:23,895 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:32:23,895 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:32:25,120 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 518 segments
+2025-09-13 15:32:25,123 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:32:25,123 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:32:27,288 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:32:27,288 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:32:28,721 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:32:28,721 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:32:30,798 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:32:30,799 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:32:31,646 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md
+2025-09-13 15:32:31,646 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-09-13 15:32:32,670 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md
+2025-09-13 15:32:32,671 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-09-13 15:32:34,721 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md
+2025-09-13 15:32:34,721 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-09-13 15:32:38,796 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md
+2025-09-13 15:32:38,797 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2025-09-13 15:32:46,825 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md
+2025-09-13 15:32:46,826 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2025-09-13 15:32:54,900 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md
+2025-09-13 15:32:54,983 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json
+2025-09-13 15:32:54,983 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-09-13 15:32:56,132 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json
+2025-09-13 15:32:56,132 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-09-13 15:32:58,155 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json
+2025-09-13 15:32:58,155 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-09-13 15:33:02,169 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json
+2025-09-13 15:33:02,170 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2025-09-13 15:33:10,286 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json
+2025-09-13 15:33:10,287 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2025-09-13 15:33:18,941 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:33:18,942 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:33:20,330 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:33:20,330 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:33:21,002 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:33:21,002 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:33:22,642 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:33:22,643 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:33:23,157 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:33:23,157 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:33:24,407 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:33:24,408 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:33:24,966 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:33:24,966 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:33:27,394 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:33:27,395 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:33:27,916 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:33:27,916 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:33:30,031 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:33:30,031 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:33:30,048 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:33:30,048 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:33:35,380 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:33:35,380 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:33:37,920 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:33:37,920 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:36:10,286 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: ASRCJK2aWk0
+2025-09-13 15:36:12,795 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 887 segments
+2025-09-13 15:36:12,802 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:36:12,802 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:36:16,168 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:36:16,168 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:36:19,591 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:36:19,591 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:36:24,282 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:36:24,283 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:36:26,933 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:36:26,934 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:36:29,578 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:36:29,579 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:36:31,635 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:36:31,635 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:36:37,775 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:36:37,775 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:36:40,874 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:36:40,874 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:37:05,945 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:37:09,064 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:37:12,412 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:37:15,569 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:37:18,825 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:37:22,206 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:37:25,143 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:37:27,346 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:37:27,347 - openai._base_client - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-09-13 15:37:33,663 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:37:35,935 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:37:35,937 - openai._base_client - INFO - Retrying request to /chat/completions in 9.000000 seconds
+2025-09-13 15:37:45,936 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:37:48,257 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:37:48,258 - openai._base_client - INFO - Retrying request to /chat/completions in 8.000000 seconds
+2025-09-13 15:37:58,369 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:38:00,892 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:38:00,893 - openai._base_client - INFO - Retrying request to /chat/completions in 9.000000 seconds
+2025-09-13 15:38:13,748 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:38:16,162 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:38:16,163 - openai._base_client - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-09-13 15:38:23,977 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:38:26,715 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:38:26,716 - openai._base_client - INFO - Retrying request to /chat/completions in 7.000000 seconds
+2025-09-13 15:38:35,229 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:38:37,502 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:38:37,505 - openai._base_client - INFO - Retrying request to /chat/completions in 9.000000 seconds
+2025-09-13 15:38:47,528 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:38:49,788 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:38:49,788 - openai._base_client - INFO - Retrying request to /chat/completions in 8.000000 seconds
+2025-09-13 15:38:58,900 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:39:01,178 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:39:01,178 - openai._base_client - INFO - Retrying request to /chat/completions in 9.000000 seconds
+2025-09-13 15:39:11,316 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:39:13,677 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:39:13,677 - openai._base_client - INFO - Retrying request to /chat/completions in 9.000000 seconds
+2025-09-13 15:39:24,009 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:39:26,152 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:39:26,152 - openai._base_client - INFO - Retrying request to /chat/completions in 11.000000 seconds
+2025-09-13 15:39:38,739 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:39:38,835 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:39:38,841 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:39:40,957 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:39:40,959 - openai._base_client - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-09-13 15:39:45,777 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:39:45,863 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:39:46,790 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:39:48,645 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:39:48,645 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:39:48,812 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:39:48,812 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:39:50,681 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:39:50,681 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:39:56,461 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:39:56,462 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:39:59,566 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:39:59,566 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:40:01,582 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: ASRCJK2aWk0
+2025-09-13 15:40:03,388 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:40:03,388 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:40:05,297 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 887 segments
+2025-09-13 15:40:05,299 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:40:05,299 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:40:07,409 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:40:07,409 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:40:09,316 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:40:09,316 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:40:12,846 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:40:12,846 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:40:14,795 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:40:14,796 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:40:16,323 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:40:16,323 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:40:18,369 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:40:18,370 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:40:20,426 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:40:20,426 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:40:22,239 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:40:22,239 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:40:23,578 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:40:23,578 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:41:07,167 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:41:07,168 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:41:09,111 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:41:09,112 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:41:11,199 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:41:11,200 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:41:12,539 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:41:12,540 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:41:14,913 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:41:14,913 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:41:14,913 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:41:14,913 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:41:16,632 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:41:16,632 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:41:16,634 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:41:16,634 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:41:17,797 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:41:17,797 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:41:17,802 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:41:17,802 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:41:17,827 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:41:17,827 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:41:17,892 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: ASRCJK2aWk0
+2025-09-13 15:41:20,168 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:41:20,168 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:41:20,168 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:41:20,168 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:41:20,641 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 887 segments
+2025-09-13 15:41:20,739 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:41:20,739 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:44:28,883 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: ASRCJK2aWk0
+2025-09-13 15:44:32,036 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 887 segments
+2025-09-13 15:44:32,049 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:44:32,049 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:46:48,480 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:46:51,637 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:46:53,137 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:46:56,909 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:47:28,261 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: ASRCJK2aWk0
+2025-09-13 15:47:29,970 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:47:31,060 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 887 segments
+2025-09-13 15:47:31,063 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:47:31,747 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:47:34,893 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:47:38,310 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:47:39,990 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2025-09-13 15:47:40,511 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:47:42,488 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:47:42,632 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2025-09-13 15:47:46,787 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:47:47,092 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:47:47,270 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2025-09-13 15:47:49,815 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:47:50,440 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:47:52,427 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2025-09-13 15:47:53,588 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:47:53,595 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:47:54,434 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:47:56,439 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:47:57,866 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:48:00,712 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:48:02,248 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:48:05,066 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:48:09,942 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:48:12,437 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:48:13,936 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:48:15,939 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:48:16,925 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:48:16,961 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json
+2025-09-13 15:48:16,961 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-09-13 15:48:18,069 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json
+2025-09-13 15:48:18,070 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-09-13 15:48:19,368 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:48:20,225 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json
+2025-09-13 15:48:20,225 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-09-13 15:48:23,001 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:48:24,278 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json
+2025-09-13 15:48:24,279 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2025-09-13 15:48:26,110 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:48:30,798 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:48:32,301 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json
+2025-09-13 15:48:32,302 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2025-09-13 15:48:34,734 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:48:37,236 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:48:37,238 - openai._base_client - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-09-13 15:48:39,298 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:48:40,384 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json
+2025-09-13 15:48:40,562 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json
+2025-09-13 15:48:40,562 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-09-13 15:48:41,616 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json
+2025-09-13 15:48:41,626 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-09-13 15:48:41,842 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:48:41,842 - openai._base_client - INFO - Retrying request to /chat/completions in 7.000000 seconds
+2025-09-13 15:48:43,718 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json
+2025-09-13 15:48:43,718 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-09-13 15:48:46,706 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: ASRCJK2aWk0
+2025-09-13 15:48:47,791 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json
+2025-09-13 15:48:47,792 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2025-09-13 15:48:49,255 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 887 segments
+2025-09-13 15:48:49,263 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:48:49,572 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json
+2025-09-13 15:48:49,572 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-09-13 15:48:50,219 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:48:50,724 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json
+2025-09-13 15:48:50,724 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-09-13 15:48:52,481 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:48:52,481 - openai._base_client - INFO - Retrying request to /chat/completions in 8.000000 seconds
+2025-09-13 15:48:53,407 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: ASRCJK2aWk0
+2025-09-13 15:48:54,779 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: ASRCJK2aWk0
+2025-09-13 15:48:55,276 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: ASRCJK2aWk0
+2025-09-13 15:48:55,443 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: ASRCJK2aWk0
+2025-09-13 15:48:55,608 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: ASRCJK2aWk0
+2025-09-13 15:48:55,774 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: ASRCJK2aWk0
+2025-09-13 15:48:55,924 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: ASRCJK2aWk0
+2025-09-13 15:48:57,312 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: ASRCJK2aWk0
+2025-09-13 15:48:57,862 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 887 segments
+2025-09-13 15:48:57,865 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:48:58,388 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 887 segments
+2025-09-13 15:48:58,388 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:48:59,942 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 887 segments
+2025-09-13 15:48:59,944 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 887 segments
+2025-09-13 15:48:59,951 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:48:59,952 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:49:00,087 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 887 segments
+2025-09-13 15:49:00,121 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:49:01,044 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 887 segments
+2025-09-13 15:49:01,047 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:49:01,059 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 887 segments
+2025-09-13 15:49:01,065 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 887 segments
+2025-09-13 15:49:01,070 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:49:01,078 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:49:02,570 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:49:04,306 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:49:04,810 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:49:04,811 - openai._base_client - INFO - Retrying request to /chat/completions in 8.000000 seconds
+2025-09-13 15:49:06,572 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:49:12,686 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:49:15,579 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:49:18,141 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:49:18,141 - openai._base_client - INFO - Retrying request to /chat/completions in 6.000000 seconds
+2025-09-13 15:49:18,895 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:49:25,818 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:49:28,160 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:49:28,161 - openai._base_client - INFO - Retrying request to /chat/completions in 10.000000 seconds
+2025-09-13 15:49:39,926 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:49:42,409 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:49:42,409 - openai._base_client - INFO - Retrying request to /chat/completions in 9.000000 seconds
+2025-09-13 15:49:53,322 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:49:55,488 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:49:55,488 - openai._base_client - INFO - Retrying request to /chat/completions in 10.000000 seconds
+2025-09-13 15:50:01,375 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: ASRCJK2aWk0
+2025-09-13 15:50:04,432 - src.pipelines.youtube_extractor - INFO - Successfully extracted transcript with 887 segments
+2025-09-13 15:50:04,451 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:50:06,272 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:50:06,491 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:50:08,679 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:50:08,683 - openai._base_client - INFO - Retrying request to /chat/completions in 8.000000 seconds
+2025-09-13 15:50:17,642 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:50:19,804 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:50:19,804 - openai._base_client - INFO - Retrying request to /chat/completions in 9.000000 seconds
+2025-09-13 15:50:30,167 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:50:32,470 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:50:32,471 - openai._base_client - INFO - Retrying request to /chat/completions in 10.000000 seconds
+2025-09-13 15:50:43,429 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:50:45,567 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:50:45,568 - openai._base_client - INFO - Retrying request to /chat/completions in 3.000000 seconds
+2025-09-13 15:50:49,429 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:50:51,441 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:50:53,055 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:51:19,522 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: ASRCJK2aWk0
+2025-09-13 15:51:21,936 - src.pipelines.youtube_extractor - ERROR - Error extracting transcript for video ASRCJK2aWk0: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=ASRCJK2aWk0! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
+
+
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
+2025-09-13 15:51:24,869 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:51:28,151 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:51:31,273 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:51:34,644 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:51:36,802 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:51:36,803 - openai._base_client - INFO - Retrying request to /chat/completions in 9.000000 seconds
+2025-09-13 15:51:46,818 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:51:49,121 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:51:49,122 - openai._base_client - INFO - Retrying request to /chat/completions in 7.000000 seconds
+2025-09-13 15:51:57,144 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:51:59,568 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:51:59,570 - openai._base_client - INFO - Retrying request to /chat/completions in 8.000000 seconds
+2025-09-13 15:52:10,049 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:52:12,661 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:52:12,662 - openai._base_client - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-09-13 15:52:18,739 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:52:20,910 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:52:20,911 - openai._base_client - INFO - Retrying request to /chat/completions in 9.000000 seconds
+2025-09-13 15:52:31,016 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:52:33,192 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:52:33,193 - openai._base_client - INFO - Retrying request to /chat/completions in 6.000000 seconds
+2025-09-13 15:52:40,231 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:52:42,587 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:52:42,588 - openai._base_client - INFO - Retrying request to /chat/completions in 10.000000 seconds
+2025-09-13 15:52:53,776 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:52:56,005 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:52:56,005 - openai._base_client - INFO - Retrying request to /chat/completions in 9.000000 seconds
+2025-09-13 15:53:06,277 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:53:08,590 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:53:08,591 - openai._base_client - INFO - Retrying request to /chat/completions in 9.000000 seconds
+2025-09-13 15:53:18,540 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:53:20,734 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:53:20,735 - openai._base_client - INFO - Retrying request to /chat/completions in 7.000000 seconds
+2025-09-13 15:53:28,771 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:53:31,000 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:53:31,010 - openai._base_client - INFO - Retrying request to /chat/completions in 9.000000 seconds
+2025-09-13 15:53:41,252 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:53:43,481 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:53:43,483 - openai._base_client - INFO - Retrying request to /chat/completions in 9.000000 seconds
+2025-09-13 15:53:53,523 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:53:55,801 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:53:55,802 - openai._base_client - INFO - Retrying request to /chat/completions in 8.000000 seconds
+2025-09-13 15:54:05,211 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:54:07,409 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:54:07,409 - openai._base_client - INFO - Retrying request to /chat/completions in 11.000000 seconds
+2025-09-13 15:54:19,826 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:54:21,984 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:54:21,984 - openai._base_client - INFO - Retrying request to /chat/completions in 4.000000 seconds
+2025-09-13 15:54:26,714 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:54:28,918 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:54:28,918 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:54:46,191 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:54:46,191 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:54:51,818 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: mps
+2025-09-13 15:54:51,819 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-09-13 15:54:57,611 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:56:32,362 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: pXNPCe6fa18
+2025-09-13 15:56:34,203 - src.pipelines.youtube_extractor - ERROR - Error extracting transcript for video pXNPCe6fa18: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=pXNPCe6fa18! This is most likely caused by:
+
+No transcripts were found for any of the requested language codes: ['en']
+
+For this video (pXNPCe6fa18) transcripts are available in the following languages:
+
+(MANUALLY CREATED)
+None
+
+(GENERATED)
+ - hi ("Hindi (auto-generated)")
+
+(TRANSLATION LANGUAGES)
+None
+
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
+2025-09-13 15:56:37,891 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:56:42,414 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:56:45,420 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:56:48,566 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:56:51,436 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:56:54,523 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:56:57,709 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:56:59,892 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:56:59,892 - openai._base_client - INFO - Retrying request to /chat/completions in 6.000000 seconds
+2025-09-13 15:57:06,827 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:57:09,034 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:57:09,036 - openai._base_client - INFO - Retrying request to /chat/completions in 9.000000 seconds
+2025-09-13 15:57:19,035 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:57:21,320 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:57:21,321 - openai._base_client - INFO - Retrying request to /chat/completions in 7.000000 seconds
+2025-09-13 15:57:29,541 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:57:31,745 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:57:31,746 - openai._base_client - INFO - Retrying request to /chat/completions in 9.000000 seconds
+2025-09-13 15:57:43,329 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:57:45,585 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:57:45,585 - openai._base_client - INFO - Retrying request to /chat/completions in 6.000000 seconds
+2025-09-13 15:57:52,893 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:57:55,155 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:57:55,156 - openai._base_client - INFO - Retrying request to /chat/completions in 8.000000 seconds
+2025-09-13 15:58:04,524 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:58:06,987 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:58:06,987 - openai._base_client - INFO - Retrying request to /chat/completions in 8.000000 seconds
+2025-09-13 15:58:16,342 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:58:18,528 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:58:18,529 - openai._base_client - INFO - Retrying request to /chat/completions in 7.000000 seconds
+2025-09-13 15:58:26,568 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:58:28,797 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:58:28,800 - openai._base_client - INFO - Retrying request to /chat/completions in 7.000000 seconds
+2025-09-13 15:58:37,096 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:58:42,187 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: pXNPCe6fa18
+2025-09-13 15:58:44,939 - src.pipelines.youtube_extractor - ERROR - Error extracting transcript for video pXNPCe6fa18: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=pXNPCe6fa18! This is most likely caused by:
+
+No transcripts were found for any of the requested language codes: ['en']
+
+For this video (pXNPCe6fa18) transcripts are available in the following languages:
+
+(MANUALLY CREATED)
+None
+
+(GENERATED)
+ - hi ("Hindi (auto-generated)")
+
+(TRANSLATION LANGUAGES)
+None
+
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
+2025-09-13 15:58:50,634 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:58:52,946 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:58:52,948 - openai._base_client - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-09-13 15:58:58,990 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:59:01,351 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:59:01,352 - openai._base_client - INFO - Retrying request to /chat/completions in 9.000000 seconds
+2025-09-13 15:59:11,422 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:59:13,639 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:59:13,640 - openai._base_client - INFO - Retrying request to /chat/completions in 7.000000 seconds
+2025-09-13 15:59:21,710 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:59:23,976 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:59:23,977 - openai._base_client - INFO - Retrying request to /chat/completions in 8.000000 seconds
+2025-09-13 15:59:32,769 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:59:34,995 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:59:34,996 - openai._base_client - INFO - Retrying request to /chat/completions in 7.000000 seconds
+2025-09-13 15:59:42,955 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:59:45,213 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:59:45,214 - openai._base_client - INFO - Retrying request to /chat/completions in 7.000000 seconds
+2025-09-13 15:59:55,510 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 15:59:57,718 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 15:59:57,719 - openai._base_client - INFO - Retrying request to /chat/completions in 5.000000 seconds
+2025-09-13 16:00:05,870 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 16:00:08,150 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 16:00:08,151 - openai._base_client - INFO - Retrying request to /chat/completions in 6.000000 seconds
+2025-09-13 16:00:15,431 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 16:00:33,413 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: pXNPCe6fa18
+2025-09-13 16:00:35,504 - src.pipelines.youtube_extractor - ERROR - Error extracting transcript for video pXNPCe6fa18: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=pXNPCe6fa18! This is most likely caused by:
+
+No transcripts were found for any of the requested language codes: ['en']
+
+For this video (pXNPCe6fa18) transcripts are available in the following languages:
+
+(MANUALLY CREATED)
+None
+
+(GENERATED)
+ - hi ("Hindi (auto-generated)")
+
+(TRANSLATION LANGUAGES)
+None
+
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
+2025-09-13 16:00:38,278 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 16:00:41,345 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 16:00:43,695 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 16:00:43,697 - openai._base_client - INFO - Retrying request to /chat/completions in 3.000000 seconds
+2025-09-13 16:00:47,543 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 16:00:49,792 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 16:00:49,793 - openai._base_client - INFO - Retrying request to /chat/completions in 8.000000 seconds
+2025-09-13 16:01:03,919 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2025-09-13 16:01:11,946 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 16:01:16,875 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 16:01:19,180 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 16:01:19,181 - openai._base_client - INFO - Retrying request to /chat/completions in 1.000000 seconds
+2025-09-13 16:01:21,454 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 16:01:23,768 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-09-13 16:01:23,769 - openai._base_client - INFO - Retrying request to /chat/completions in 9.000000 seconds
+2025-09-13 16:01:33,592 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-13 16:01:59,041 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: pXNPCe6fa18
+2025-09-13 16:02:01,167 - src.pipelines.youtube_extractor - ERROR - Error extracting transcript for video pXNPCe6fa18: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=pXNPCe6fa18! This is most likely caused by:
+
+No transcripts were found for any of the requested language codes: ['en']
+
+For this video (pXNPCe6fa18) transcripts are available in the following languages:
+
+(MANUALLY CREATED)
+None
+
+(GENERATED)
+ - hi ("Hindi (auto-generated)")
+
+(TRANSLATION LANGUAGES)
+None
+
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
+2025-09-13 16:02:17,588 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: pXNPCe6fa18
+2025-09-13 16:02:19,748 - src.pipelines.youtube_extractor - ERROR - Error extracting transcript for video pXNPCe6fa18: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=pXNPCe6fa18! This is most likely caused by:
+
+No transcripts were found for any of the requested language codes: ['en']
+
+For this video (pXNPCe6fa18) transcripts are available in the following languages:
+
+(MANUALLY CREATED)
+None
+
+(GENERATED)
+ - hi ("Hindi (auto-generated)")
+
+(TRANSLATION LANGUAGES)
+None
+
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
+2025-09-13 16:02:28,063 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: pXNPCe6fa18
+2025-09-13 16:02:29,886 - src.pipelines.youtube_extractor - ERROR - Error extracting transcript for video pXNPCe6fa18: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=pXNPCe6fa18! This is most likely caused by:
+
+No transcripts were found for any of the requested language codes: ['en']
+
+For this video (pXNPCe6fa18) transcripts are available in the following languages:
+
+(MANUALLY CREATED)
+None
+
+(GENERATED)
+ - hi ("Hindi (auto-generated)")
+
+(TRANSLATION LANGUAGES)
+None
+
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
+2025-09-13 16:03:31,132 - src.pipelines.youtube_extractor - INFO - Fetching playlist information from: Ingest PDFs / DOCX Upload files  Drag and drop files here Limit 200MB per file • PDF, DOCX, DOC  Ingest YouTube URL / Playlist YouTube URL or Playlist  https://www.youtube.com/watch?v=pXNPCe6fa18&ab_channel=AnasAnjaria   📝 Generate Notes   🤖 QA Chatbot   🎓 Learning Mode   🔗 Recommended Resources  Generate Lecture-Style Notes Notes Title (optional)  Chunk size  1200
+2025-09-13 16:03:31,749 - src.pipelines.youtube_extractor - ERROR - Error fetching playlist: Command '['yt-dlp', '--flat-playlist', '--dump-json', '--no-warnings', 'Ingest PDFs / DOCX Upload files  Drag and drop files here Limit 200MB per file • PDF, DOCX, DOC  Ingest YouTube URL / Playlist YouTube URL or Playlist  https://www.youtube.com/watch?v=pXNPCe6fa18&ab_channel=AnasAnjaria   📝 Generate Notes   🤖 QA Chatbot   🎓 Learning Mode   🔗 Recommended Resources  Generate Lecture-Style Notes Notes Title (optional)  Chunk size  1200']' returned non-zero exit status 1.
+2025-09-13 16:03:39,052 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: pXNPCe6fa18
+2025-09-13 16:03:40,960 - src.pipelines.youtube_extractor - ERROR - Error extracting transcript for video pXNPCe6fa18: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=pXNPCe6fa18! This is most likely caused by:
+
+No transcripts were found for any of the requested language codes: ['en']
+
+For this video (pXNPCe6fa18) transcripts are available in the following languages:
+
+(MANUALLY CREATED)
+None
+
+(GENERATED)
+ - hi ("Hindi (auto-generated)")
+
+(TRANSLATION LANGUAGES)
+None
+
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
+2025-09-13 16:04:17,437 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: pXNPCe6fa18
+2025-09-13 16:04:19,116 - src.pipelines.youtube_extractor - ERROR - Error extracting transcript for video pXNPCe6fa18: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=pXNPCe6fa18! This is most likely caused by:
+
+No transcripts were found for any of the requested language codes: ['en']
+
+For this video (pXNPCe6fa18) transcripts are available in the following languages:
+
+(MANUALLY CREATED)
+None
+
+(GENERATED)
+ - hi ("Hindi (auto-generated)")
+
+(TRANSLATION LANGUAGES)
+None
+
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
+2025-09-13 16:05:00,759 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video: PeMlggyqz0Y
+2025-09-13 16:05:03,994 - src.pipelines.youtube_extractor - ERROR - Error extracting transcript for video PeMlggyqz0Y: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=PeMlggyqz0Y! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
+
+
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
+2025-09-13 16:07:43,491 - src.pipelines.youtube_extractor - INFO - Using direct connection to YouTube API
+2025-09-13 16:07:43,491 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video PeMlggyqz0Y using proxy approach
+2025-09-13 16:07:49,170 - src.pipelines.youtube_extractor - WARNING - Failed to extract transcript using proxy: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=PeMlggyqz0Y! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
+
+
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
+2025-09-13 16:07:49,170 - src.pipelines.youtube_extractor - INFO - Extracting transcript for video PeMlggyqz0Y using direct approach
+2025-09-13 16:07:52,994 - src.pipelines.youtube_extractor - WARNING - Failed to extract transcript using direct: 
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=PeMlggyqz0Y! This is most likely caused by:
+
+YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
+- You have done too many requests and your IP has been blocked by YouTube
+- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
+
+Ways to work around this are explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
+
+
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
+2025-09-13 16:07:52,995 - src.pipelines.youtube_extractor - ERROR - All approaches failed for video PeMlggyqz0Y

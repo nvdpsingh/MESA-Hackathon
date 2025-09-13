@@ -8,6 +8,7 @@ easy to follow for students.
 
 from typing import List, Dict, Any
 import os
+import time
 
 from .text_processing import chunk_text
 
@@ -111,6 +112,8 @@ def iter_generate_notes_from_texts(
     texts: list[str],
     title: str | None = None,
     group_size: int = 3,
+    pause_seconds: float = 2.0,
+    max_retries: int = 3,
 ) -> "list[str]":
     """
     Yield markdown notes incrementally, processing the input texts in groups
@@ -138,10 +141,20 @@ def iter_generate_notes_from_texts(
         unique_texts.append(t)
 
     n = len(unique_texts)
+    if n == 0:
+        yield "No content available to generate notes from."
+        return
+
     prev_outline: list[str] = []
     for i in range(0, n, max(1, group_size)):
         group = unique_texts[i : i + max(1, group_size)]
         content = "\n\n".join(group)
+        
+        # Skip if content is too short or empty
+        if len(content.strip()) < 50:
+            yield f"## Section {i//max(1, group_size) + 1}\n*Content too brief to process*"
+            continue
+            
         # Provide a brief outline of prior sections to discourage repetition
         if prev_outline:
             prefix = (
@@ -152,14 +165,36 @@ def iter_generate_notes_from_texts(
         else:
             prefix = ""
         payload = prefix + content
-        if backend == "ollama":
-            md = _llm_markdown_ollama(payload, title)
-        else:
-            md = _llm_markdown_openai_compatible(payload, title)
-        yield md or ""
+        
+        # Retry with simple backoff to avoid 429 limits
+        attempt = 0
+        md = ""
+        while attempt <= max_retries:
+            try:
+                if backend == "ollama":
+                    md = _llm_markdown_ollama(payload, title)
+                else:
+                    md = _llm_markdown_openai_compatible(payload, title)
+                break
+            except Exception as e:
+                attempt += 1
+                if attempt > max_retries:
+                    md = f"## Section {i//max(1, group_size) + 1}\n*Error generating notes: {str(e)[:100]}*"
+                    break
+                time.sleep(min(pause_seconds * (1.5 ** (attempt - 1)), 15.0))
+        
+        # Ensure we always yield something
+        if not md or len(md.strip()) < 10:
+            md = f"## Section {i//max(1, group_size) + 1}\n*Generated content was empty or too short*"
+        
+        yield md
+        
         # Extract a simple one-line summary as outline seed (first heading or first line)
         summary_line = (md.splitlines()[0] if md else "").strip()
         if summary_line:
             prev_outline.append(summary_line[:120])
+        # Pause between sections to respect rate limits
+        if pause_seconds > 0:
+            time.sleep(pause_seconds)
 
 
