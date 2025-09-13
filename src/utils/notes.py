@@ -122,14 +122,44 @@ def iter_generate_notes_from_texts(
     else:
         backend = "groq" if os.getenv("GROQ_API_KEY") else "ollama"
 
-    n = len(texts)
+    # 1) Deduplicate highly similar chunks with simple fingerprints
+    def _fingerprint(t: str) -> str:
+        import re, hashlib
+        norm = re.sub(r"\W+", "", t.lower())
+        return hashlib.sha1(norm.encode("utf-8")).hexdigest()
+
+    seen: set[str] = set()
+    unique_texts: list[str] = []
+    for t in texts:
+        fp = _fingerprint(t)
+        if fp in seen:
+            continue
+        seen.add(fp)
+        unique_texts.append(t)
+
+    n = len(unique_texts)
+    prev_outline: list[str] = []
     for i in range(0, n, max(1, group_size)):
-        group = texts[i : i + max(1, group_size)]
+        group = unique_texts[i : i + max(1, group_size)]
         content = "\n\n".join(group)
-        if backend == "ollama":
-            md = _llm_markdown_ollama(content, title)
+        # Provide a brief outline of prior sections to discourage repetition
+        if prev_outline:
+            prefix = (
+                "Previously covered topics (do not repeat, only add new points):\n"
+                + "\n".join(f"- {o}" for o in prev_outline[-5:])
+                + "\n\n"
+            )
         else:
-            md = _llm_markdown_openai_compatible(content, title)
+            prefix = ""
+        payload = prefix + content
+        if backend == "ollama":
+            md = _llm_markdown_ollama(payload, title)
+        else:
+            md = _llm_markdown_openai_compatible(payload, title)
         yield md or ""
+        # Extract a simple one-line summary as outline seed (first heading or first line)
+        summary_line = (md.splitlines()[0] if md else "").strip()
+        if summary_line:
+            prev_outline.append(summary_line[:120])
 
 

@@ -6,6 +6,7 @@ Fallback to Groq/OpenAI-compatible if OLLAMA is not desired.
 """
 
 import os
+import time
 from typing import List, Dict, Any
 
 
@@ -78,36 +79,47 @@ def _answer_with_openai_compatible(query: str, contexts: List[Dict[str, Any]], m
         {"role": "user", "content": f"Context:\n{context_text}\n\nQuestion: {query}\nProvide a concise answer with citations."},
     ]
 
-    try:
-        resp = client.chat.completions.create(
-            model=model_name,
-            messages=messages,
-            temperature=0.2,
-            max_tokens=600,
-        )
-        return resp.choices[0].message.content or ""
-    except BadRequestError as e:
-        # If model was decommissioned, attempt discovery once
-        if "model" in str(e).lower() and "decommissioned" in str(e).lower():
-            try:
-                models = client.models.list()
-                llama_models = [m.id for m in getattr(models, "data", []) if "llama" in getattr(m, "id", "")]
-                preferred = sorted(
-                    llama_models,
-                    key=lambda x: ("70" not in x, "33" not in x, "8" not in x, x),
-                )
-                if preferred and preferred[0] != model_name:
-                    model_name = preferred[0]
-                    resp = client.chat.completions.create(
-                        model=model_name,
-                        messages=messages,
-                        temperature=0.2,
-                        max_tokens=600,
+    # Retry with exponential backoff on 429
+    backoff = 2.0
+    for attempt in range(6):
+        try:
+            resp = client.chat.completions.create(
+                model=model_name,
+                messages=messages,
+                temperature=0.2,
+                max_tokens=600,
+            )
+            return resp.choices[0].message.content or ""
+        except BadRequestError as e:
+            # If model was decommissioned, attempt discovery once
+            if "decommissioned" in str(e).lower():
+                try:
+                    models = client.models.list()
+                    llama_models = [m.id for m in getattr(models, "data", []) if "llama" in getattr(m, "id", "")]
+                    preferred = sorted(
+                        llama_models,
+                        key=lambda x: ("70" not in x, "33" not in x, "8" not in x, x),
                     )
-                    return resp.choices[0].message.content or ""
-            except Exception:
-                pass
-        raise
+                    if preferred and preferred[0] != model_name:
+                        model_name = preferred[0]
+                        continue  # retry loop will call again with new model
+                except Exception:
+                    pass
+            msg = str(e)
+            if "429" in msg or "Too Many Requests" in msg:
+                time.sleep(backoff)
+                backoff *= 1.5
+                continue
+            raise
+        except Exception as e:
+            msg = str(e)
+            if "429" in msg or "Too Many Requests" in msg:
+                time.sleep(backoff)
+                backoff *= 1.5
+                continue
+            raise
+    # final fallback raise if all retries exhausted
+    raise RuntimeError("LLM request failed after retries (Groq-compatible)")
 
 
 def _answer_with_openai_native(query: str, contexts: List[Dict[str, Any]], model: str | None) -> str:
@@ -132,13 +144,23 @@ def _answer_with_openai_native(query: str, contexts: List[Dict[str, Any]], model
         {"role": "user", "content": f"Context:\n{context_text}\n\nQuestion: {query}\nProvide a concise answer with citations."},
     ]
 
-    resp = client.chat.completions.create(
-        model=model_name,
-        messages=messages,
-        temperature=0.2,
-        max_tokens=600,
-    )
-    return resp.choices[0].message.content or ""
+    backoff = 2.0
+    for attempt in range(6):
+        try:
+            resp = client.chat.completions.create(
+                model=model_name,
+                messages=messages,
+                temperature=0.2,
+                max_tokens=600,
+            )
+            return resp.choices[0].message.content or ""
+        except Exception as e:
+            if "429" in str(e) or "Too Many Requests" in str(e):
+                time.sleep(backoff)
+                backoff *= 1.5
+                continue
+            raise
+    raise RuntimeError("LLM request failed after retries (OpenAI)")
 
 
 def answer_with_context(query: str, contexts: List[Dict[str, Any]], model: str | None = None) -> str:
